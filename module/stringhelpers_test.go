@@ -8,3 +8,10 @@ func TestJoin(t *testing.T) {
 		t.Error("Expected 阿部ひろし, got", v)
 	}
 }
+
+func TestReverse(t *testing.T) {
+	v := Reverse("テルマエ・ロマエ")
+	if v != "エマロ・エマルテ" {
+		t.Error("Expected エマロ・エマルテ, got", v)
+	}
+}
